@@ -1,0 +1,369 @@
+/* Спецификация */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   color: #304041;
+   letter-spacing: 0.05em;
+}
+
+*  {
+   box-sizing: border-box;
+}
+
+ul, li {
+   padding: 0;
+   margin: 0;
+   display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   padding: 0;
+   margin: 0;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+
+p {
+   padding: 0;
+   margin: 0;
+}
+
+.container {
+   width: 1170px;
+   margin: 0 auto;
+}
+
+
+.container_full-hight {
+   height: 100%;
+   display: flex;
+   align-items:center
+}
+
+a {
+   text-decoration: none;
+}
+
+.btn {
+   color: #fff;
+   padding: 18px 52px;
+   background: #FF367E;
+   font-size: 16px;
+   font-weight: 800;
+   display: inline-block;
+   margin: 0 auto;
+   border-radius: 119px;
+   transition: all 0.5s ease;
+}
+
+.btn:hover {
+   background: #cf235f;
+}
+
+section {
+   padding-top: 73px;
+   padding-bottom: 73px;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   object-fit: cover;
+}
+
+/* Первая секция */
+
+.header {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.39%, rgba(36, 32, 84, 0.23) 44.44%),
+   url('../img/head.jpg') no-repeat center center / cover;
+   text-align: center;
+   color: #fff;
+   padding: 90px 0 90px;
+}
+
+a.logo {
+   display: inline-block;
+}
+
+
+.offer {
+   margin-top: 200px;
+}
+
+.offer__city {
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 800;
+   color: #000;
+   line-height: 18px;
+   background: #fff;
+   padding: 8px 17px;
+   border-radius: 80px;
+   display: inline-block;
+   margin-bottom: 24px;
+   
+}
+
+.offer__title {
+   font-size: 60px;
+   font-weight: 800;
+   letter-spacing: 0.145em;
+   line-height: 73px;
+}
+
+.offer__text {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 24px;
+   margin: 24px 0;
+}
+
+.offer__down {
+   background: url('../img/arrow-down.svg') no-repeat;
+   width: 18px;
+   height: 27px;
+   display: block;
+   margin: 217px auto 0;
+}
+
+/* Вторая секция */
+
+.direction  {
+   padding-top: 145px;
+}
+
+.history {
+   background: #EAF4F7;
+   display: flex;
+}
+
+.history__content {
+   padding: 112px 73px;
+}
+
+h2 {
+   text-align: center;
+   line-height: 37px;
+   margin-bottom: 100px;
+}
+
+.history__title {
+   color: #789AA0;
+   line-height: 18px;
+}
+
+
+h3 {
+   font-size: 24px;
+   margin: 20px 0 40px;
+}
+
+.history__text {
+   /* width: 520px; */
+   line-height: 23px;
+}
+
+.histoty__img {
+   width: 476px;
+   flex-shrink: 0;
+}
+
+.histoty__img img {
+   width: 100%;
+   height: 100%;
+}
+
+.history__next {
+   background: url('../img/arrow-next.svg');
+   display: block;
+   width: 68px;
+   height: 17px;
+   margin-top: 48px;
+}
+
+.second-btn {
+   margin-top: 90px;
+}
+
+.history__btn {
+   color: #ec759f;
+   padding: 18px 52px;
+   background: #fff;
+   border-radius: 119px;
+   border: 1px solid #ec759f;
+   transition: all 0.5s ease;
+   display: inline-block;
+   text-align: center;
+   /* margin-top: 90px; */
+}
+
+.second-btn {
+   text-align: center;
+}
+
+/* Экскурсия онлайн */
+
+.excursion-content {
+   background: url('../img/photo3.jpg') no-repeat right center / 50%;
+   padding: 102px 0;
+}
+
+.excursion-list {
+   width: 407px;
+}
+
+
+.excursion-list__item {
+   font-size: 16px;
+   line-height: 20px;
+
+}
+
+
+.excursion-list__item:not(:last-child) {
+   margin-bottom: 55px;
+}
+
+
+.excursion-list__item:before {
+   content: '';
+   display: block;
+   width: 65px;
+   height: 7px;
+   background: #4EB1B6;
+   margin-bottom: 15px;
+}
+  
+/* Футер */
+
+.footer {
+   padding: 74px 0 169px;
+   font-size: 14px;
+   line-height: 17px;
+
+}
+
+.footer-content {
+   display: flex;
+}
+
+.footer-text{
+   margin-right: 60px;
+}
+
+
+
+/*  RESPONSIVE  */
+
+
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+
+
+
+}
+
+
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+
+   .history {
+      flex-direction: column-reverse;
+   }
+   .histoty__img {
+      margin: 0 auto;
+      margin-top: 73px;
+      width: 80%;
+   }
+   .excursion-list {
+      width: 300px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border-radius: 5px
+  }
+  .excursion-content {
+      background:url(../img/photo5.jpg) right center / 100% no-repeat;
+   }
+   
+
+}
+
+
+
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+   .histoty__img {
+      margin: 0 auto;
+      width: 100%;
+   }
+
+   .excursion-content {
+      /* background: #EAF4F7; */
+      background: rgba(0, 0, 0, 0.05);
+   }
+   .excursion-list {
+      color: #000;
+      background: none;
+      width: 100%;
+   }
+   .footer {
+      padding: 50px 0 100px;
+   }
+
+
+
+   }
+
+
+
+
+/* Extra small: 451px - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: auto;
+	}
+
+   .offer {
+      margin-top: 100px;
+   }
+	
+   .offer__title {
+      font-size: 50px;
+   }
+   .offer__down {
+      margin-top: 100px;
+   }
+   .history__content {
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+   }
+   .footer-content {
+      flex-direction: column;
+      row-gap: 15px;
+      padding-left: 20px;
+   }
+
+
+
+  
+}
+
